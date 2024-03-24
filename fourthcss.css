@@ -1,0 +1,36 @@
+/* Basic styling for header */
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling for search input, filter options, and sorting options */
+input, select, button {
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styling for product listings */
+.product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    header {
+        padding: 10px;
+    }
+
+    input, select, button {
+        width: calc(100% - 10px);
+    }
+}
+
+       

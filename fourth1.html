@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search and Filtering</title>
+    <link rel="stylesheet" href="fourthcss.css">
+</head>
+<body>
+    <header>
+        <h1>Product Search and Filtering</h1>
+        <!-- Search bar -->
+        <input type="text" id="searchInput" placeholder="Search products...">
+        <!-- Filter options -->
+        <select id="categoryFilter">
+            <option value="">All Categories</option>
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+            <!-- Add more categories as needed -->
+        </select>
+        <input type="number" id="minPrice" placeholder="Min Price">
+        <input type="number" id="maxPrice" placeholder="Max Price">
+        <button onclick="applyFilters()">Apply Filters</button>
+        <!-- Sorting options -->
+        <select id="sortOptions">
+            <option value="relevance">Relevance</option>
+            <option value="popularity">Popularity</option>
+            <option value="price-low">Price (Low to High)</option>
+            <option value="price-high">Price (High to Low)</option>
+        </select>
+    </header>
+    <main id="productList">
+        <!-- Product listings will be displayed here -->
+    </main>
+
+    <script src="fourthjss.js"></script>
+</body>
+</html>

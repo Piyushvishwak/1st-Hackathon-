@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .cart {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .item {
+            width: calc(33.33% - 20px);
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .item-info {
+            margin-top: 10px;
+        }
+        .checkout-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 768px) {
+            .item {
+                width: calc(50% - 20px);
+            }
+        }
+        @media screen and (max-width: 576px) {
+            .item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        <div class="cart">
+            <div class="item">
+                <img src="https://imgs.search.brave.com/5Cjd_t9oiq1uNOmSOxxIwjRH_m_Bv2AcNYkxB9HZOYI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/Lzg2NDc1MDAvci9p/bC9hMzNlYTMvMzky/OTEzODU2MC9pbF82/MDB4NjAwLjM5Mjkx/Mzg1NjBfZ28wYy5q/cGc" alt="Product Image">
+                <div class="item-info">
+                    <h2>Wooden Canvas Painting</h2>
+                    <p>Description: Scenic Oil Painting on wooden canvas</p>
+                    <p class="price">$19.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <!-- Add more items here -->
+        </div>
+        <button class="checkout-btn" onclick="checkout()">Checkout</button>
+    </div>
+    <script src = "fifth.js"></script>
+</body>
+</html>
